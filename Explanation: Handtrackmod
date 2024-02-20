@@ -1,16 +1,16 @@
-This is a Python script that uses the MediaPipe library to detect hand landmarks in real-time using a webcam. 
-The script defines a class handDetector that takes several parameters to configure the hand detector. The class provides two methods: findHands and findPosition. 
-The findHands method takes an image as input and returns the image with hand landmarks drawn on it. 
-The findPosition method takes an image and a hand number as input and returns the list of landmark positions for the specified hand.
+This is a Python script that uses the 'MediaPipe' library to detect hand landmarks in real-time using a webcam. 
+The script defines a class 'handDetector' that takes several parameters to configure the 'hand detector'. The class provides two methods: 'findHands' and 'findPosition'. 
+The 'findHands' method takes an image as input and returns the image with hand landmarks drawn on it. 
+The 'findPosition' method takes an image and a hand number as input and returns the list of landmark positions for the specified hand.
 
-In the main function, the script initializes a video capture object to capture video from the default camera. 
-It then creates an instance of the handDetector class and enters a loop where it continuously captures frames from the camera, detects hand landmarks using the handDetector instance, and calculates the frame rate. 
+In the 'main' function, the script initializes a video capture object to capture video from the default camera. 
+It then creates an instance of the 'handDetector' class and enters a loop where it continuously captures frames from the camera, detects hand landmarks using the 'handDetector' instance, and calculates the frame rate. 
 If hand landmarks are detected, the script prints the position of the fourth landmark (index finger tip) and displays the image with hand landmarks drawn on it.
 
-The script uses OpenCV library to capture video frames and display the image, and MediaPipe library to detect hand landmarks. 
-The handDetector class initializes the MediaPipe hand detector with the specified parameters and provides methods to process the video frames and extract hand landmark positions.
+The script uses 'OpenCV' library to capture video frames and display the image, and 'MediaPipe' library to detect hand landmarks. 
+The 'handDetector' class initializes the 'MediaPipe' hand detector with the specified parameters and provides methods to process the video frames and extract hand landmark positions.
 The script continuously captures video frames, processes them using the handDetector instance, and displays the image with hand landmarks drawn on it. 
 The script also calculates and displays the frame rate.
 
-The script can be used as a starting point for hand gesture recognition or other applications that require real-time hand landmark detection. 
-The findPosition method can be modified to extract specific hand landmark positions and use them for further processing.
+The script can be used as a starting point for hand 'gesture recognition' or other applications that require real-time hand landmark 'detection'. 
+The 'findPosition' method can be modified to extract specific hand landmark positions and use them for further processing.
